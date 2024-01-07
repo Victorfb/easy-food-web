@@ -1,4 +1,4 @@
-import { ButtonBasic } from './Button.styles'
+import { ButtonBasic } from './styles'
 
 interface ButtonProps {
   text: string
