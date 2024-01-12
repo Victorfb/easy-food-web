@@ -4,6 +4,7 @@ import { darkTheme } from './styles/themes/dark'
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router'
 import { GlobalStyle } from './styles/global'
+import 'atropos/css'
 
 export function App() {
   return (
