@@ -32,5 +32,7 @@ export const darkTheme = {
   neutral150: '#EAEAEF',
   neutral100: '#F6F6F9',
   neutral0: '#FFFFFF',
-  background: '#32324D',
+  write: '#FFFFFF',
+  black: '#000000',
+  background: '#15153d',
 }

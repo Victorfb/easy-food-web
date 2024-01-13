@@ -8,7 +8,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-      background-color: ${(props) => props.theme.background};
+      background-image: linear-gradient(
+         to right,
+         ${(props) => props.theme.background},
+         ${(props) => props.theme.tertiary700}
+      );
       color: ${(props) => props.theme.neutral0};
   }
 

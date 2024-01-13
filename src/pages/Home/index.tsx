@@ -17,7 +17,7 @@ export function Home() {
     <HomeContainer>
       <ItemLeft>
         <ItemTop>
-          <LeftImg src={leftFood} alt="" data-atropos-offset="-5" />
+          <LeftImg src={leftFood} alt="" />
         </ItemTop>
         <ItemBottom>
           <Title>
@@ -32,7 +32,7 @@ export function Home() {
         </ItemBottom>
       </ItemLeft>
       <ItemRight>
-        <RightImg src={rightFood} alt="" data-atropos-offset="5" />
+        <RightImg src={rightFood} alt="" />
       </ItemRight>
     </HomeContainer>
   )
