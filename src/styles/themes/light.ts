@@ -32,5 +32,7 @@ export const lightTheme = {
   neutral150: '#EAEAEF',
   neutral100: '#F6F6F9',
   neutral0: '#FFFFFF',
+  write: '#FFFFFF',
+  black: '#000000',
   background: '#F9F9F9',
 }

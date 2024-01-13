@@ -57,19 +57,41 @@ export const Subtitle = styled.text`
 `
 
 export const LeftImg = styled.img`
+  object-fit: cover;
+  mask-image: linear-gradient(
+    to top,
+    transparent,
+    ${(props) => props.theme.background} 90%
+  );
+
   width: 27.31125rem;
   height: 27.31125rem;
   flex-shrink: 0;
   margin-left: -9rem;
-  /* box-shadow: 0px 0px 15.559px 0px rgba(255, 255, 255, 0.7); */
+
+  &:hover {
+    filter: brightness(1.1);
+    mask-image: none;
+  }
 `
 
 export const RightImg = styled.img`
+  object-fit: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    ${(props) => props.theme.background} 70%
+  );
+  filter: brightness(1.2);
   width: 36.5rem;
   height: 36.5rem;
   flex-shrink: 0;
   margin-right: -10rem;
-  /* box-shadow: 0px 0px 16.96px 0px rgba(255, 255, 255, 0.7); */
+
+  &:hover {
+    filter: brightness(1.1);
+    mask-image: none;
+  }
 `
 
 export const HomeContainer = styled.div`
@@ -78,16 +100,4 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`
-
-export const EllipseRight1 = styled.div`
-  width: 32.86rem;
-  height: 32.86rem;
-  flex-shrink: 0;
-
-  border-radius: 32.86rem;
-  border: 2px solid rgba(255, 223, 207, 0.7);
-
-  background-color: ${(props) => props.theme.primary700};
-  color: ${(props) => props.theme.neutral0};
 `
