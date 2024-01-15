@@ -61,7 +61,7 @@ export const LeftImg = styled.img`
   mask-image: linear-gradient(
     to top,
     transparent,
-    ${(props) => props.theme.background} 90%
+    ${(props) => props.theme.background} 40%
   );
 
   width: 27.31125rem;
@@ -80,7 +80,7 @@ export const RightImg = styled.img`
   mask-image: linear-gradient(
     to bottom,
     transparent,
-    ${(props) => props.theme.background} 70%
+    ${(props) => props.theme.background} 30%
   );
   filter: brightness(1.2);
   width: 36.5rem;
@@ -100,4 +100,11 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+`
+
+export const BackgroundImg = styled.img`
+  max-width: 100%;
+  object-fit: cover; /* Garante que a imagem cubra completamente o contêiner, mantendo a proporção */
+  opacity: 0.06;
+  position: fixed;
 `
