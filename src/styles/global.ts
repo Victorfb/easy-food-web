@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
       background-image: linear-gradient(
          to right,
-         ${(props) => props.theme.background},
-         ${(props) => props.theme.tertiary700}
+         ${(props) => props.theme.background} 25%,
+         ${(props) => props.theme.tertiary700} 140%
       );
       color: ${(props) => props.theme.neutral0};
   }
