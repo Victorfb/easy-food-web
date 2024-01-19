@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  :focus{
+      outline: transparent;
+      box-shadow: 0 0 0 2px ${(props) => props.theme.primary600};
+  }
+
   * {
       margin: 0;
       padding: 0;
