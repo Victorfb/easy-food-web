@@ -1,3 +1,5 @@
+import { ContainerSide } from './styles'
+
 export function SideMenu() {
-  return <h1>Side Menu</h1>
+  return <ContainerSide></ContainerSide>
 }
