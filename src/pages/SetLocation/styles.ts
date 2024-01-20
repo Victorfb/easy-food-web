@@ -26,6 +26,8 @@ export const ContainerText = styled.div`
   width: 43.75rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 `
 
 export const Title = styled.text`
@@ -89,6 +91,7 @@ export const AnimationMap = styled(Lottie)`
 export const ContainerButtons = styled.div``
 
 export const ButtonMyLocation = styled.button`
+  cursor: pointer;
   display: inline-flex;
   height: 1.3rem;
   padding: 0.75rem 1.5rem;
@@ -111,6 +114,7 @@ export const ButtonMyLocation = styled.button`
 `
 
 export const ButtonSetLocation = styled.button`
+  cursor: pointer;
   display: inline-flex;
   height: 1.3rem;
   padding: 0.75rem 1.5rem;
@@ -131,3 +135,5 @@ export const ButtonSetLocation = styled.button`
   font-weight: 600;
   line-height: 1.375rem;
 `
+
+export const ButtonIcon = styled.img``

@@ -1,5 +1,12 @@
-import { ContainerSide } from './styles'
+import { Icon, ContainerSide, ButtonCircle } from './styles'
+import chevronLeft from '../../assets/icons/chevron-left.svg'
 
 export function SideMenu() {
-  return <ContainerSide></ContainerSide>
+  return (
+    <ContainerSide>
+      <ButtonCircle>
+        <Icon src={chevronLeft} alt="" />
+      </ButtonCircle>
+    </ContainerSide>
+  )
 }
