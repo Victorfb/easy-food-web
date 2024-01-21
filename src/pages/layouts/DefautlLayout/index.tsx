@@ -1,12 +1,16 @@
 import { Outlet } from 'react-router-dom'
 import { SideMenu } from '../../../components/SideMenu'
-import { ContainerDefault } from './styles'
+import { ContainerDefaultRoot, ContainerDefault } from './styles'
+import { Header } from '../../../components/Header'
 
 export function DefaultLayout() {
   return (
-    <ContainerDefault>
+    <ContainerDefaultRoot>
       <SideMenu />
-      <Outlet />
-    </ContainerDefault>
+      <ContainerDefault>
+        <Header />
+        <Outlet />
+      </ContainerDefault>
+    </ContainerDefaultRoot>
   )
 }

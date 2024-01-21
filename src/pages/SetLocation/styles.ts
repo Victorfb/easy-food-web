@@ -5,7 +5,6 @@ import Lottie from 'lottie-react'
 export const ContainerRoot = styled.div`
   display: flex;
   flex-direction: column;
-  display: flex;
   height: calc(100vh);
   padding: 4.375rem 7.5rem;
   flex-direction: column;
@@ -101,6 +100,7 @@ export const ButtonMyLocation = styled.button`
   flex-shrink: 0;
   background: transparent;
   border: 0;
+  border-radius: 10px;
   box-shadow: 0;
 
   color: ${(props) => props.theme.primary100};
@@ -124,6 +124,7 @@ export const ButtonSetLocation = styled.button`
   flex-shrink: 0;
   background: transparent;
   border: 0;
+  border-radius: 10px;
   box-shadow: 0;
 
   color: ${(props) => props.theme.primary100};

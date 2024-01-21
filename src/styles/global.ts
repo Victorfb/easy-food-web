@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+
   :focus{
       outline: transparent;
       box-shadow: 0 0 0 2px ${(props) => props.theme.primary600};
@@ -13,9 +14,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+      background-size: cover;
       background-image: linear-gradient(
          to right,
-         ${(props) => props.theme.background} 25%,
+         ${(props) => props.theme.neutral900} 25%,
          ${(props) => props.theme.tertiary700} 140%
       );
       color: ${(props) => props.theme.neutral0};
@@ -27,5 +29,12 @@ export const GlobalStyle = createGlobalStyle`
    font-style: normal;
    font-weight: 600;
    line-height: 1.375rem;
+  }
+
+  button {
+      &:hover,
+      &:focus {
+         filter: brightness(1.5);
+      }
   }
 `
