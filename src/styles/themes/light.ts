@@ -34,5 +34,7 @@ export const lightTheme = {
   neutral0: '#FFFFFF',
   write: '#FFFFFF',
   black: '#000000',
+  blue: '#0000cd',
+  gray: '#696969',
   background: '#F9F9F9',
 }

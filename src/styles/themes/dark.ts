@@ -34,5 +34,7 @@ export const darkTheme = {
   neutral0: '#FFFFFF',
   write: '#FFFFFF',
   black: '#000000',
+  blue: '#0000cd',
+  gray: '#696969',
   background: '#15153d',
 }

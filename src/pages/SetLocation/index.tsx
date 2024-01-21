@@ -14,7 +14,7 @@ import {
 } from './styles'
 import locationMap from '../../assets/lottie/locationAnimation.json'
 import { Icon } from '../../components/SideMenu/styles'
-import search from '../../assets/icons/search.svg'
+
 import mapPin from '../../assets/icons/map-pin.svg'
 export function SetLocation() {
   return (
@@ -28,9 +28,7 @@ export function SetLocation() {
           </SubTitle>
         </ContainerText>
         <ContainerLocation>
-          <InputLocation>
-            <Icon src={search} alt="" />
-          </InputLocation>
+          <InputLocation></InputLocation>
           <Map>
             <AnimationMap animationData={locationMap} />
           </Map>
